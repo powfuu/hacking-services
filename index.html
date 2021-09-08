@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="/"><img src="./assets/logo.svg" alt="logo"/></a>
+      </div>
+      <div class="nav-links">
+        <a  href="/">Dark Hacking</a> <a href="/">White Hacking</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="left-column">
+        <h1>INVIS Hacking corp, since 2001</h1>
+        <p>
+          we provide dark hacking services(stealing debit cards, paypals, etc) and white hacking(security for you)
+        </p>
+        <button id='contact-us'>Contact us</button>
+        <img src="./assets/circle.svg" alt="circle" id="circle-1" />
+      </div>
+      <div class="right-column">
+        <img src="./assets/card.png" alt="card" class="card" />
+        <img src="./assets/circle.svg" alt="circle" id="circle-2" />
+      </div>
+    </div>
+  </body>
+  <script>
+    var but = document.getElementById('contact-us');
+    but.addEventListener('click', ()=>{
+      alert(`you'll be redirected to gmail, send us a email (everituwebdevelopment@gmail.com) with your interests`)
+      window.location.href='https://gmail.com/'
+    })
+  </script>
+</html>
